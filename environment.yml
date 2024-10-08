@@ -1,0 +1,23 @@
+name: benchmarks
+channels:
+  - conda-forge
+dependencies:
+  - make
+  - cmake>=3.18
+  - compilers
+  - compiler-rt # sanitizers
+  - llvm-openmp
+  - libhwloc # for tbb
+  - gmock
+  - gtest
+  - benchmark
+  - matplotlib
+  - numpy
+  - seaborn
+  - pandas
+  - ipykernel
+  - elfutils
+  - patchelf
+  - jemalloc
+  - gxx
+  - clangxx
