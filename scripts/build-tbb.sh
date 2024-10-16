@@ -1,3 +1,5 @@
+#!/bin/bash -x
+
 cd oneTBB
 
 mkdir -p build
@@ -8,4 +10,3 @@ cmake --build build --parallel
 cmake --install build --prefix ../thd/libs
 
 cd ../
-
