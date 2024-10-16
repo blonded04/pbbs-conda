@@ -1,5 +1,10 @@
 #!/bin/bash -x
 
+set -e
+source activate base
+conda activate base
+conda activate benchmarks
+
 cd oneTBB
 
 mkdir -p build
@@ -10,3 +15,4 @@ cmake --build build --parallel
 cmake --install build --prefix ../thd/libs
 
 cd ../
+conda deactivate
